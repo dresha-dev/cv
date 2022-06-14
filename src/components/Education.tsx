@@ -1,5 +1,5 @@
 import React from "react";
-import { format, formatDistance, formatDuration } from "date-fns";
+import { format } from "date-fns";
 
 const items = [
   {
@@ -10,6 +10,8 @@ const items = [
     location: "Ukraine",
   },
 ];
+
+const isBrowser = typeof window !== "undefined";
 
 const Education = () => (
   <section className="my-4 flex flex-col break-inside-avoid-page">
@@ -22,16 +24,18 @@ const Education = () => (
       after:w-3 after:h-3 after:absolute after:top-4 after:-left-2 after:content-[''] after:border-2 after:rounded-full after:bg-white
       "
       >
-        <div className="flex flex-col text-sm pt-1">
-          <span className="whitespace-nowrap">
-            {item.endDate
-              ? format(new Date(item.endDate), "LLL yyyy")
-              : "Current"}
-          </span>
-          <span className="whitespace-nowrap">
-            {format(new Date(item.startDate), "LLL yyyy")}
-          </span>
-        </div>
+        {isBrowser ? (
+          <div className="flex flex-col text-sm pt-1">
+            <span className="whitespace-nowrap">
+              {item.endDate
+                ? format(new Date(item.endDate), "LLL yyyy")
+                : "Current"}
+            </span>
+            <span className="whitespace-nowrap">
+              {format(new Date(item.startDate), "LLL yyyy")}
+            </span>
+          </div>
+        ) : null}
         <div>
           <h3>{item.title}</h3>
           <h3>

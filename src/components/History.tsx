@@ -1,6 +1,6 @@
 import React from "react";
-import { format, formatDistance, formatDuration } from "date-fns";
-
+import { format, formatDistance } from "date-fns";
+const isBrowser = typeof window !== "undefined";
 const items = [
   {
     startDate: "2022-01-07",
@@ -100,22 +100,27 @@ const History = () => (
         after:w-3 after:h-3 after:absolute after:top-4 after:-left-2 after:content-[''] after:border-2 after:rounded-full after:bg-white
         "
       >
-        <div className="flex flex-col text-sm pt-1">
-          <span className="whitespace-nowrap">
-            {item.endDate
-              ? format(new Date(item.endDate), "LLL yyyy")
-              : "Current"}
-          </span>
-          <span className="whitespace-nowrap">
-            {format(new Date(item.startDate), "LLL yyyy")}
-          </span>
+        {isBrowser ? (
+          <div className="flex flex-col text-sm pt-1">
+            <span className="whitespace-nowrap">
+              {item.endDate
+                ? format(new Date(item.endDate), "LLL yyyy")
+                : "Current"}
+            </span>
+            <span className="whitespace-nowrap">
+              {format(new Date(item.startDate), "LLL yyyy")}
+            </span>
 
-          <span className="text-neutral-500 text-xs">
-            {item.endDate
-              ? formatDistance(new Date(item.startDate), new Date(item.endDate))
-              : formatDistance(new Date(item.startDate), new Date())}
-          </span>
-        </div>
+            <span className="text-neutral-500 text-xs">
+              {item.endDate
+                ? formatDistance(
+                    new Date(item.startDate),
+                    new Date(item.endDate)
+                  )
+                : formatDistance(new Date(item.startDate), new Date())}
+            </span>
+          </div>
+        ) : null}
         <div>
           <h3>
             {item.title}
