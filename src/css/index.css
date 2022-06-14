@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl font-bold;
+  }
+
+  @media print {
+    body,
+    html {
+      overflow: visible !important;
+      margin-bottom: auto !important;
+      font-size: 10px !important;
+    }
+    * {
+      overflow: visible !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      page-break-before: auto;
+      page-break-inside: avoid;
+      page-break-after: avoid;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { format } from "date-fns";
+import { format, formatDistance, formatDuration } from "date-fns";
 
 const items = [
   {
@@ -58,7 +58,7 @@ const items = [
   },
   {
     startDate: "2012-03-01",
-    endDate: "2016-07-15",
+    endDate: "2016-07-01",
     title: "Frontend Developer",
     company: "Maxymiser - Oracle",
     location: "Ukraine, Poland",
@@ -90,34 +90,45 @@ const List: React.FC<{ items: string[]; title: string }> = ({
 );
 
 const History = () => (
-  <div className="my-6">
+  <section className="my-4 flex flex-col break-inside-avoid-page">
     <h2 className="text-xl font-bold mb-4 border-b-2">Experience</h2>
     {items.map((item, index) => (
       <div
         key={index}
-        className="border-l-2 relative p-6 
-        after:w-3 after:h-3 after:absolute after:top-1 after:left-[-7px] after:content-[''] after:border-2 after:rounded-full after:bg-white
+        className="border-l-2 relative px-4 gap-8 pb-8
+        flex 
+        after:w-3 after:h-3 after:absolute after:top-4 after:left-[-7px] after:content-[''] after:border-2 after:rounded-full after:bg-white
         "
       >
-        <div className="flex flex-col">
-          <span>
+        <div className="flex flex-col text-sm pt-1">
+          <span className="whitespace-nowrap">
             {item.endDate
               ? format(new Date(item.endDate), "LLL yyyy")
               : "Current"}
           </span>
-          <span>{format(new Date(item.startDate), "LLL yyyy")}</span>
-        </div>
-        <h3 className="text-xl font-bold">{item.title}</h3>
-        <p className="font-bold text-lg">
-          {item.company} - {item.location}
-        </p>
+          <span className="whitespace-nowrap">
+            {format(new Date(item.startDate), "LLL yyyy")}
+          </span>
 
-        <List title="Major Accomplishments:" items={item.accomplishments} />
-        <h4 className="text-lg my-1">Technologies/Tools:</h4>
-        <p className="text-neutral-500 text-sm">{item.technologies}</p>
+          <span className="text-neutral-500 text-xs">
+            {item.endDate
+              ? formatDistance(new Date(item.startDate), new Date(item.endDate))
+              : formatDistance(new Date(item.startDate), new Date())}
+          </span>
+        </div>
+        <div>
+          <h3 className="text-xl font-bold">{item.title}</h3>
+          <p className="font-bold text-lg">
+            {item.company} - {item.location}
+          </p>
+
+          <List title="Major Accomplishments:" items={item.accomplishments} />
+          <h4 className="text-lg my-1">Technologies/Tools:</h4>
+          <p className="text-neutral-500 text-sm">{item.technologies}</p>
+        </div>
       </div>
     ))}
-  </div>
+  </section>
 );
 
 export default History;

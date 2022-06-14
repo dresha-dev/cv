@@ -1,10 +1,13 @@
 import React from "react";
 
-export default function Title() {
-  return (
-    <div className="flex flex-col">
-      <h1 className="text-4xl font-bold">Andrii Ponamarov</h1>
-      <h2 className="text-2xl">Senior Software Engineer/Team Lead</h2>
-    </div>
-  );
+interface IProps {
+  className?: string;
 }
+const Title: React.FC<IProps> = ({ className = "" }) => (
+  <section className={`flex flex-col ${className}`}>
+    <h1>Andrii Ponamarov</h1>
+    <h2>Senior Software Engineer/Team Lead</h2>
+  </section>
+);
+
+export default Title;
