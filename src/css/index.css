@@ -4,15 +4,29 @@
 
 @layer base {
   h1 {
-    @apply text-4xl font-bold;
+    @apply text-xl;
+    @apply md:text-4xl font-bold;
   }
 
   h2 {
-    @apply text-2xl;
+    @apply text-base;
+    @apply md:text-2xl font-bold;
   }
 
   h3 {
-    @apply text-xl font-bold;
+    @apply text-base;
+    @apply md:text-xl font-bold;
+  }
+
+  h4 {
+    @apply text-base;
+    @apply md:text-xl;
+  }
+
+  p,
+  li {
+    @apply text-sm;
+    @apply md:text-sm;
   }
 
   @media print {

@@ -78,10 +78,10 @@ const List: React.FC<{ items: string[]; title: string }> = ({
   title,
 }) => (
   <>
-    <h4 className="text-lg my-1 text-neutral-700">{title}</h4>
+    <h4 className="my-1 text-neutral-700">{title}</h4>
     <ul className="text-neutral-500">
       {items.map((item, index) => (
-        <li key={index} className="list-disc list-inside text-sm">
+        <li key={index} className="list-disc list-inside">
           {item}
         </li>
       ))}
@@ -91,13 +91,13 @@ const List: React.FC<{ items: string[]; title: string }> = ({
 
 const History = () => (
   <section className="my-4 flex flex-col break-inside-avoid-page">
-    <h2 className="text-xl font-bold mb-4 border-b-2">Experience</h2>
+    <h2 className="mb-4 border-b">Experience</h2>
     {items.map((item, index) => (
       <div
         key={index}
         className="border-l-2 relative px-4 gap-8 pb-8
-        flex 
-        after:w-3 after:h-3 after:absolute after:top-4 after:left-[-7px] after:content-[''] after:border-2 after:rounded-full after:bg-white
+        flex
+        after:w-3 after:h-3 after:absolute after:top-4 after:-left-2 after:content-[''] after:border-2 after:rounded-full after:bg-white
         "
       >
         <div className="flex flex-col text-sm pt-1">
@@ -117,13 +117,14 @@ const History = () => (
           </span>
         </div>
         <div>
-          <h3 className="text-xl font-bold">{item.title}</h3>
-          <p className="font-bold text-lg">
+          <h3>
+            {item.title}
+            <br />
             {item.company} - {item.location}
-          </p>
+          </h3>
 
           <List title="Major Accomplishments:" items={item.accomplishments} />
-          <h4 className="text-lg my-1">Technologies/Tools:</h4>
+          <h4 className="my-1">Technologies/Tools:</h4>
           <p className="text-neutral-500 text-sm">{item.technologies}</p>
         </div>
       </div>

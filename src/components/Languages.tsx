@@ -1,5 +1,5 @@
 import React from "react";
-import SideList from "../SideList";
+import SideList from "./SideList";
 
 const languages = [
   {
