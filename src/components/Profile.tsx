@@ -9,6 +9,7 @@ const Profile = () => (
     <img
       src={avatar}
       className="object-cover w-40 h-40 rounded-full border-2 border-cyan-50"
+      alt="Andrii Ponamarov"
     />
     <a href={`mailto:${email}`}>{email}</a>
     <a target="_blank" href={linkedin} className="print:hidden underline mt-2">

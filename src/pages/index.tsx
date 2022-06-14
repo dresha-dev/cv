@@ -6,9 +6,22 @@ import History from "../components/History";
 import Skills from "../components/Skills";
 import Languages from "../components/Languages";
 import Education from "../components/Education";
+import { Helmet } from "react-helmet";
 
 const IndexPage = () => (
   <main className="max-w-screen-lg mx-auto min-w-min print:overflow-visible p-4">
+    <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
+    >
+      <meta charSet="utf-8" />
+      <title>Andrii Ponamarov - Senior Software Engineer</title>
+      <meta
+        name="description"
+        content="CV, Senior Software Engineer, Andrii Ponamarov"
+      ></meta>
+    </Helmet>
     <div className="md:w-1/3 md:float-left print:float-left print:w-1/3">
       <Profile />
     </div>
