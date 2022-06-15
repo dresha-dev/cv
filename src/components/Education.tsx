@@ -4,14 +4,12 @@ import { format } from "date-fns";
 const items = [
   {
     startDate: "2003-08-01",
-    endDate: "20008-06-01",
+    endDate: "2008-06-01",
     title: "Master Degree",
     name: "Oles Honchar Dnipro National University",
     location: "Ukraine",
   },
 ];
-
-const isBrowser = typeof window !== "undefined";
 
 const Education = () => (
   <section className="my-4 flex flex-col break-inside-avoid-page">
@@ -24,18 +22,17 @@ const Education = () => (
       after:w-3 after:h-3 after:absolute after:top-4 after:-left-2 after:content-[''] after:border-2 after:rounded-full after:bg-white
       "
       >
-        {isBrowser ? (
-          <div className="flex flex-col text-sm pt-1">
-            <span className="whitespace-nowrap">
-              {item.endDate
-                ? format(new Date(item.endDate), "LLL yyyy")
-                : "Current"}
-            </span>
-            <span className="whitespace-nowrap">
-              {format(new Date(item.startDate), "LLL yyyy")}
-            </span>
-          </div>
-        ) : null}
+        <div className="flex flex-col text-sm pt-1">
+          <span className="whitespace-nowrap">
+            {item.endDate
+              ? format(new Date(item.endDate), "LLL yyyy")
+              : "Current"}
+          </span>
+          <span className="whitespace-nowrap">
+            {format(new Date(item.startDate), "LLL yyyy")}
+          </span>
+        </div>
+
         <div>
           <h3>{item.title}</h3>
           <h3>

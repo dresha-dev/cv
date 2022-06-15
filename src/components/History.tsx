@@ -1,6 +1,6 @@
 import React from "react";
 import { format, formatDistance } from "date-fns";
-const isBrowser = typeof window !== "undefined";
+
 const items = [
   {
     startDate: "2022-01-07",
@@ -89,18 +89,18 @@ const List: React.FC<{ items: string[]; title: string }> = ({
   </>
 );
 
-const History = () => (
-  <section className="my-4 flex flex-col break-inside-avoid-page">
-    <h2 className="mb-4 border-b">Experience</h2>
-    {items.map((item, index) => (
-      <div
-        key={index}
-        className="border-l-2 relative px-4 gap-8 pb-8
+const History = () => {
+  return (
+    <section className="my-4 flex flex-col break-inside-avoid-page">
+      <h2 className="mb-4 border-b">Experience</h2>
+      {items.map((item, index) => (
+        <div
+          key={index}
+          className="border-l-2 relative px-4 gap-8 pb-8
         flex
         after:w-3 after:h-3 after:absolute after:top-4 after:-left-2 after:content-[''] after:border-2 after:rounded-full after:bg-white
         "
-      >
-        {isBrowser ? (
+        >
           <div className="flex flex-col text-sm pt-1">
             <span className="whitespace-nowrap">
               {item.endDate
@@ -117,24 +117,25 @@ const History = () => (
                     new Date(item.startDate),
                     new Date(item.endDate)
                   )
-                : formatDistance(new Date(item.startDate), new Date())}
+                : null}
             </span>
           </div>
-        ) : null}
-        <div>
-          <h3>
-            {item.title}
-            <br />
-            {item.company} - {item.location}
-          </h3>
 
-          <List title="Major Accomplishments:" items={item.accomplishments} />
-          <h4 className="my-1">Technologies/Tools:</h4>
-          <p className="text-neutral-500 text-sm">{item.technologies}</p>
+          <div>
+            <h3>
+              {item.title}
+              <br />
+              {item.company} - {item.location}
+            </h3>
+
+            <List title="Major Accomplishments:" items={item.accomplishments} />
+            <h4 className="my-1">Technologies/Tools:</h4>
+            <p className="text-neutral-500 text-sm">{item.technologies}</p>
+          </div>
         </div>
-      </div>
-    ))}
-  </section>
-);
+      ))}
+    </section>
+  );
+};
 
 export default History;
