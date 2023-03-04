@@ -7,7 +7,7 @@ const languages = [
     description: "B2",
   },
   {
-    name: "Ukrainian, Russian",
+    name: "Ukrainian",
     description: "Native",
   },
   {
