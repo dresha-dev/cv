@@ -5,12 +5,12 @@ const skills = [
   {
     name: "Frontend",
     description:
-      "ReactJs, Svelte, Vue, AngularJs, Cypress, Jest, Webpack, Rollup, Grunt, Prettier, MaterialUI, Bootstrap, Tailwind, .ect",
+      "ReactJs, Svelte, Vue, AngularJs, Cypress, Jest, Webpack, Vite, Rollup, Grunt, Prettier, MaterialUI, Bootstrap, Tailwind, .ect",
   },
   {
     name: "Backend",
     description:
-      "Node.js, NestJS, Express, Koa, GraphQL, PHP, Symfony, Laravel, PostgreSQL, Redis, MongoDB, Firestore, TypeORM, .ect",
+      "Node.js, NestJS, Express, Koa, GraphQL, PHP, Symfony, Laravel, PostgreSQL, Redis, MongoDB, Firestore, TypeORM, RabbitMQ, Grafana .ect",
   },
   {
     name: "DevOps",
@@ -18,7 +18,7 @@ const skills = [
   },
   {
     name: "Additional",
-    description: "Git, Jira, Confluence, Slack, Figma, Blender, .ect",
+    description: "Git, Jira, Confluence, Slack, Figma, Blender, GA .ect",
   },
 ];
 

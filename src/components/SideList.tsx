@@ -15,7 +15,7 @@ const SideList: React.FC<IProps> = ({ items, title }) => (
     <h3>{title}</h3>
     {items.map((item) => (
       <div key={item.name} className="mt-2">
-        <h3>{item.name}</h3>
+        <h3 className="print:text-sm">{item.name}</h3>
         <p className="text-sm text-neutral-500 py-1">{item.description}</p>
       </div>
     ))}

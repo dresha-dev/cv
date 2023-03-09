@@ -4,20 +4,23 @@ import { format, formatDistance } from "date-fns";
 const items = [
   {
     startDate: "2022-01-07",
-    title: "Senior Software Engineer",
+    title: "Senior Software Engineer/Tech Lead",
     company: "Ankorstore",
     location: "Luxembourg",
     accomplishments: [
       "Develop and release internal tool for engineering growth framework",
       "Provide a great onboarding experience for a new joiners",
+      "Introduce new technologies and tools to the team",
+      "Structured projects on the technical side through the definition of dependencies and the division of work into smaller tasks, which were subsequently transformed into tickets",
+      "Creating RFC for optimization and developing new features",
     ],
     technologies:
-      "VueJs, Jest, Cypress, Laravel, GCP, Docker, Jira, Notion, Figma, NextJs, NextAuth, .ect",
+      "VueJs, Jest, Cypress, Laravel, GCP, Algolia, RabbitMQ, Grafana, Docker, Jira, Notion, Figma, NextJs, NextAuth, .ect",
   },
   {
     startDate: "2020-01-01",
     endDate: "2021-12-01",
-    title: "Senior Software Engineer/Line Manager",
+    title: "Senior Software Engineer/Line Manager/Team Lead",
     company: "OAT",
     location: "Luxembourg",
     accomplishments: [
