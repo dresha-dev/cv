@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
   pathPrefix: "/cv",
   siteMetadata: {
     title: `Andrii Ponamarov CV`,
-    siteUrl: `https://dresha-dev.github.io/cv`,
+    siteUrl: `https://dresha-dev.github.io`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
