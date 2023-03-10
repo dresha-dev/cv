@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  assetPrefix: "/cv",
   pathPrefix: "/cv",
   siteMetadata: {
     title: `Andrii Ponamarov CV`,
