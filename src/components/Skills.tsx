@@ -20,6 +20,10 @@ const skills = [
     name: "Additional",
     description: "Git, Jira, Confluence, Slack, Figma, Blender, GA .ect",
   },
+  {
+    name: "Familiar with",
+    description: "PHP, Python, shellscript, C++, GO, Rust, Java, .ect",
+  },
 ];
 
 const Skills = () => <SideList items={skills} title="Skills" />;

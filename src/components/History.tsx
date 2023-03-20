@@ -30,7 +30,7 @@ const items = [
       "Line manager for team of 6 people",
     ],
     technologies:
-      "Svelte, Cypress, Jest, PHP, Symphony, GCP, Docker, K6, Git, Jira, Confluence",
+      "Svelte, Cypress, Jest, PHP, Symphony, Redis, GCP, Docker, K6, Git, Jira, Confluence",
   },
   {
     startDate: "2019-12-01",
