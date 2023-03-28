@@ -8,7 +8,6 @@ import Languages from "../components/Languages";
 import Education from "../components/Education";
 import { Helmet } from "react-helmet";
 import Summary from "../components/Summary";
-import PersonalLife from "../components/PersonalLife";
 
 const IndexPage = () => (
   <main className="max-w-screen-lg mx-auto min-w-min print:overflow-visible p-4 print:p-0">
@@ -38,7 +37,6 @@ const IndexPage = () => (
       <Summary />
       <History />
       <Education />
-      <PersonalLife />
     </div>
   </main>
 );
