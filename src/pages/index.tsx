@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import Summary from "../components/Summary";
 
 const IndexPage = () => (
-  <main className="max-w-screen-lg mx-auto min-w-min print:overflow-visible p-4 print:p-0">
+  <main className="max-w-screen-lg mx-auto min-w-min print:overflow-visible p-4 print:m-0 print:p-0">
     <Helmet
       htmlAttributes={{
         lang: "en",
@@ -23,20 +23,20 @@ const IndexPage = () => (
         content="CV, Senior Software Engineer, Andrii Ponamarov"
       ></meta>
     </Helmet>
-    <div className="md:w-1/3 md:float-left print:float-left print:w-1/3">
+    <div className="md:w-1/3 md:float-left print:float-left print:w-1/4">
       <Profile />
     </div>
 
-    <Title className="pl-4 inline-block md:w-2/3 print:w-2/3 items-center md:items-start" />
+    <Title className="pl-4 inline-block md:w-2/3 print:w-3/4 items-center md:items-start" />
 
     <div className="md:float-left print:float-left md:w-1/3 print:w-1/3 clear-left px-4 mt-2">
       <Skills />
       <Languages />
+      <Education />
     </div>
     <div className="pl-4 inline-block md:w-2/3 print:w-2/3">
       <Summary />
       <History />
-      <Education />
     </div>
   </main>
 );

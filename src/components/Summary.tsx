@@ -1,8 +1,8 @@
 import React from "react";
 
 const Summary = () => (
-  <section className="my-4 print:my-2 flex flex-col break-inside-avoid-page">
-    <h2 className="mb-4 border-b print:text-sm print:md-2">Summary</h2>
+  <section className="my-4 print:my-0 flex flex-col break-inside-avoid-page">
+    <h2 className="mb-4 border-b print:text-sm print:mb-1 ">Summary</h2>
     <p className="text-neutral-500">
       Hi there 👋
       <br />

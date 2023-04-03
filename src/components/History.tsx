@@ -101,8 +101,8 @@ const List: React.FC<{ items: string[]; title: string }> = ({
 
 const History = () => {
   return (
-    <section className="my-4 flex flex-col break-inside-avoid-page">
-      <h2 className="mb-4 border-b">Experience</h2>
+    <section className="my-4 print:my-2 flex flex-col break-inside-avoid-page">
+      <h2 className="mb-4 print:mb-2 border-b">Experience</h2>
       {items.map((item, index) => (
         <div
           key={index}
