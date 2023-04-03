@@ -11,7 +11,7 @@ const languages = [
     description: "Native",
   },
   {
-    name: "Luxembourgian",
+    name: "Luxembourgish",
     description: "A2",
   },
   {
