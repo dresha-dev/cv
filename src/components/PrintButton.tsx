@@ -1,5 +1,6 @@
 import React from "react";
 import PrintIcon from "./PrintIcon";
+import ClickHere from "./ClickHere";
 
 const Button = () => (
   <button
@@ -10,6 +11,9 @@ const Button = () => (
     }}
   >
     <PrintIcon />
+    <span className="scale-x-[-1] absolute top-full right-4 w-[100px] p-2 invisible print:hidden md:visible">
+      <ClickHere />
+    </span>
   </button>
 );
 
