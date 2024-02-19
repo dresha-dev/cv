@@ -6,8 +6,8 @@ const Summary = () => (
     <p className="text-neutral-500">
       Hi there 👋
       <br />
-      Despite of my real name people call me "Dresha". I'm an experienced
-      software engineer with more than 11 years of building outstanding products
+      Despite of my real name Andrii people call me Dresha. I'm an experienced
+      software engineer with more than 12 years of building outstanding products
       🦄. Most of my career I was focusing on the frontend side of web
       applications, but I also have extensive experience in backend development
       and DevOps. I'm a strong team player and leader. I enjoy working with
