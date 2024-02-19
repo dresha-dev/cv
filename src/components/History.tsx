@@ -3,6 +3,23 @@ import { format, formatDistance } from "date-fns";
 
 const items = [
   {
+    startDate: "2023-01-05",
+    title: "Senior Software Engineer/ FE Tech Lead",
+    company: "Staizen",
+    location: "Remote",
+    accomplishments: [
+      "Led the migration of ExtJS to React, developing a detailed project plan and optimizing code for efficiency",
+      "Managed Jira tasks with clear requirements and priorities based on business needs",
+      "Engaged in pair programming, fostering collaboration and team skills",
+      "Conducted code reviews to ensure high-quality standards and best practices",
+      "Provided ad hoc advisory support for effective problem-solving.",
+      "Create prototype for building dynamic app for marketing team",
+    ],
+    technologies:
+      "ExtJs, React, MUI, Redux, Docker, Jira, Confluence, Miro, .ect",
+  },
+  {
+    endDate: "2023-01-05",
     startDate: "2022-01-07",
     title: "Senior Software Engineer/Tech Lead",
     company: "Ankorstore",
