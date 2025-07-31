@@ -17,7 +17,7 @@ const items = [
       "Create prototype for building dynamic app for marketing team",
     ],
     technologies:
-      "ExtJs, React, MUI, Redux, Docker, Jira, Confluence, Miro, .ect",
+      "NextJS 13-15, Redis, Rancher, Argo, Contentful, Jenkins, ExtJs, React, MUI, Redux, Docker, Jira, Confluence, Miro, .ect",
   },
   {
     endDate: "2023-01-05",
