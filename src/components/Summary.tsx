@@ -6,12 +6,14 @@ const Summary = () => (
     <p className="text-neutral-500">
       Hi there 👋
       <br />
+      <br />
       I'm Andrii, though most people know me as Dresha, a software engineer with
       12+ years of experience building outstanding products 🦄. Focused on
       modern frontend development, I deliver engaging, performant and
       high-quality user experiences, while also designing and implementing
       complete end-to-end solutions across the software stack. A lifelong
       learner, I continually seek opportunities to grow and help teams develop.
+      <br />
       <br />
       Outside of work, my hobbies include reading, board games, traveling,
       hiking, roller skating, yoga and basketball.

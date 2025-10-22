@@ -13,12 +13,13 @@ const skills = [
   },
   {
     name: "DevOps",
-    description: "Docker, GCP, CI/CD, .ect",
+    description:
+      "Docker, GCP, AWS, CI/CD, Jenkins, Rancher, Argo, Kubernetes, .ect",
   },
   {
     name: "Additional",
     description:
-      "Git, Jira, Confluence, Slack, Figma, Blender, Notion, GA .ect",
+      "PHP, Rust, Go, Python, Git, Jira, Confluence, Slack, Figma, Blender, Notion, GA, C++ .ect",
   },
 ];
 
