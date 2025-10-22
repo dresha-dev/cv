@@ -8,6 +8,7 @@ const items = [
     company: "Staizen",
     location: "Remote",
     accomplishments: [
+      "AI integration into existing platform, enhancing user experience and functionality",
       "Finding and delivering cutting-edge solutions to keep high performance application, integration with CMS that met the evolving demands of the platform's business clients",
       "Led the migration of ExtJS to React, developing a detailed project plan and optimizing code for efficiency",
       "Managed Jira tasks with clear requirements and priorities based on business needs",

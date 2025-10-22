@@ -6,18 +6,15 @@ const Summary = () => (
     <p className="text-neutral-500">
       Hi there 👋
       <br />
-      Despite of my real name Andrii people call me Dresha. I'm an experienced
-      software engineer with more than 12 years of building outstanding products
-      🦄. Most of my career I was focusing on the frontend side of web
-      applications, but I also have extensive experience in backend development
-      and DevOps. I'm a strong team player and leader. I enjoy working with
-      others to solve complex problems and motivate them to build innovative
-      solutions. I'm a lifelong learner and I'm always looking for new
-      opportunities to grow and develop myself and the team. In my free time I'm
-      enjoying to read books, to play board games, to travel, to hike, to roller
-      skate, to do yoga and to play basketball. I'm currently interested in
-      working remotely with React/Svelte frameworks on the frontend side and
-      Node.js, NestJs on the backend side.
+      I'm Andrii, though most people know me as Dresha, a software engineer with
+      12+ years of experience building outstanding products 🦄. Focused on
+      modern frontend development, I deliver engaging, performant and
+      high-quality user experiences, while also designing and implementing
+      complete end-to-end solutions across the software stack. A lifelong
+      learner, I continually seek opportunities to grow and help teams develop.
+      <br />
+      Outside of work, my hobbies include reading, board games, traveling,
+      hiking, roller skating, yoga and basketball.
     </p>
   </section>
 );
