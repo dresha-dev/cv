@@ -16,11 +16,11 @@ const items = [
       "Create prototype for building dynamic app for marketing team",
     ],
     technologies:
-      "ExtJs, React, MUI, Redux, Docker, Jira, Confluence, Miro, .ect",
+      "ExtJs, React, MUI, Redux, Docker, Jira, Confluence, Miro, .etc",
   },
   {
-    endDate: "2023-01-05",
     startDate: "2022-01-07",
+    endDate: "2023-01-05",
     title: "Senior Software Engineer/Tech Lead",
     company: "Ankorstore",
     location: "Remote",
@@ -36,7 +36,7 @@ const items = [
       "Created RFC for optimization and developing new features",
     ],
     technologies:
-      "VueJs, Jest, Cypress, Laravel, GCP, Algolia, RabbitMQ, Grafana, Docker, Jira, Notion, Figma, NextJs, NextAuth, .ect",
+      "VueJs, Jest, Cypress, Laravel, GCP, Algolia, RabbitMQ, Grafana, Docker, Jira, Notion, Figma, NextJs, NextAuth, .etc",
   },
   {
     startDate: "2020-01-01",
@@ -142,7 +142,7 @@ const History = () => {
               {item.endDate
                 ? formatDistance(
                     new Date(item.startDate),
-                    new Date(item.endDate)
+                    new Date(item.endDate),
                   )
                 : null}
             </span>
