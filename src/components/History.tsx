@@ -8,6 +8,8 @@ const items = [
     company: "Staizen",
     location: "Remote",
     accomplishments: [
+      "AI integration into existing platform, enhancing user experience and functionality",
+      "Finding and delivering cutting-edge solutions to keep high performance application, integration with CMS that met the evolving demands of the platform's business clients",
       "Led the migration of ExtJS to React, developing a detailed project plan and optimizing code for efficiency",
       "Managed Jira tasks with clear requirements and priorities based on business needs",
       "Engaged in pair programming, fostering collaboration and team skills",
@@ -16,7 +18,7 @@ const items = [
       "Create prototype for building dynamic app for marketing team",
     ],
     technologies:
-      "ExtJs, React, MUI, Redux, Docker, Jira, Confluence, Miro, .etc",
+      "NextJS 13-15, Redis, Rancher, Argo, Contentful, Jenkins, ExtJs, React, MUI, Redux, Docker, Jira, Confluence, Miro, .ect",
   },
   {
     startDate: "2022-01-07",
