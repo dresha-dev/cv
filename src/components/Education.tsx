@@ -11,7 +11,7 @@ const item = {
 };
 
 const Education = () => (
-  <section className="my-4 flex flex-col break-inside-avoid-page">
+  <section className="my-4 flex flex-col ">
     <h2 className="mb-4 border-t pt-3">Education</h2>
     <div className="">
       <p className="whitespace-nowrap">
