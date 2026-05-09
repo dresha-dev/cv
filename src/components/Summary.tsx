@@ -6,7 +6,7 @@ const Summary = () => (
     <p className="text-neutral-500">
       Senior Tech Lead and Principal Engineer with 15+ years of experience
       solving complex technical challenges across diverse product domains. I
-      thrive at the intersection of technical depth and strategic thinking —
+      thrive at the intersection of technical depth and strategic thinking -
       planning robust solutions, challenging assumptions, and setting the
       standards that keep systems scalable and reliable long-term.
       Business-oriented mindset with a strong focus on translating stakeholder

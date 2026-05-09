@@ -10,7 +10,7 @@ const items = [
     accomplishments: [
       {
         title:
-          "Fund Operating System — FinTech SaaS (institutional alternatives industry)",
+          "Fund Operating System - FinTech SaaS (institutional alternatives industry)",
         items: [
           "Designed and owned the full technical roadmap for migrating a large-scale legacy ExtJS application to React, coordinating a cross-functional team of 8 engineers (frontend + backend)",
           "Established high coding standards and codebase structure across both legacy and new systems, and built the team's deep understanding of ExtJS internals - enabling engineers to confidently investigate, extend, and deliver complex client-requested features throughout the migration",
@@ -21,7 +21,7 @@ const items = [
       },
       {
         title:
-          "Internal People & Resource Management Platform — AI-Powered MVP",
+          "Internal People & Resource Management Platform - AI-Powered MVP",
         items: [
           "Architected a proof-of-concept AI assistant using a RAG (Retrieval-Augmented Generation) pipeline, enabling natural language querying of a live GraphQL API for people and resource assignment management",
         ],
