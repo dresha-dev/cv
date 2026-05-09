@@ -47,9 +47,9 @@
     h4,
     h5,
     h6 {
-      page-break-before: auto;
+      /* page-break-before: auto;
       page-break-inside: avoid;
-      page-break-after: avoid;
+      page-break-after: avoid; */
     }
   }
 }

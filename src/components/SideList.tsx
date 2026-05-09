@@ -11,8 +11,8 @@ interface IProps {
 }
 
 const SideList: React.FC<IProps> = ({ items, title }) => (
-  <section className="pt-3 border-t border-gray-200 ">
-    <h3>{title}</h3>
+  <section className="pt-3 border-gray-200 mb-3">
+    <h2 className="border-b">{title}</h2>
     {items.map((item) => (
       <div key={item.name} className="mt-2">
         <h3 className="print:text-sm">{item.name}</h3>

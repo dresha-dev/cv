@@ -4,38 +4,67 @@ import { format, formatDistance } from "date-fns";
 const items = [
   {
     startDate: "2023-01-05",
-    title: "Senior Software Engineer/ FE Tech Lead",
+    title: "Frontend Tech Lead / Software Engineer",
     company: "Staizen",
-    location: "Remote",
+    location: "Luxembourg/Remote",
     accomplishments: [
-      "AI integration into existing platform, enhancing user experience and functionality",
-      "Finding and delivering cutting-edge solutions to keep high performance application, integration with CMS that met the evolving demands of the platform's business clients",
-      "Led the migration of ExtJS to React, developing a detailed project plan and optimizing code for efficiency",
-      "Managed Jira tasks with clear requirements and priorities based on business needs",
-      "Engaged in pair programming, fostering collaboration and team skills",
-      "Conducted code reviews to ensure high-quality standards and best practices",
-      "Provided ad hoc advisory support for effective problem-solving.",
-      "Create prototype for building dynamic app for marketing team",
+      {
+        title:
+          "Fund Operating System — FinTech SaaS (institutional alternatives industry)",
+        items: [
+          "Designed and owned the full technical roadmap for migrating a large-scale legacy ExtJS application to React, coordinating a cross-functional team of 8 engineers (frontend + backend)",
+          "Established high coding standards and codebase structure across both legacy and new systems, and built the team's deep understanding of ExtJS internals - enabling engineers to confidently investigate, extend, and deliver complex client-requested features throughout the migration",
+          "Implemented a feature-flag strategy enabling incremental, zero-disruption rollout - allowing parallel operation of legacy and modernized systems",
+          "Balanced migration delivery alongside continuous feature development and live defect resolution in a fast-paced environment",
+          "Participated in the hiring process by interviewing engineering candidates",
+        ],
+      },
+      {
+        title:
+          "Internal People & Resource Management Platform — AI-Powered MVP",
+        items: [
+          "Architected a proof-of-concept AI assistant using a RAG (Retrieval-Augmented Generation) pipeline, enabling natural language querying of a live GraphQL API for people and resource assignment management",
+        ],
+      },
+      {
+        title:
+          "B2B E-commerce re-platform (Multi-million euro project for a global enterprise client operating across 25+ countries)",
+        items: [
+          "Delivered performance and scalability solutions within a cross-functional squad for a high-traffic enterprise B2B platform",
+          "Architected and implemented a Redis caching layer that dramatically reduced application response times",
+          "Led CMS (Contentful) integration: designed content models, established deployment pipeline from development to production",
+          "Built a next-generation internationalization (i18n) solution on top of CMS for multi-market rollout",
+          "Owned SEO strategy and technical implementation, achieving a perfect Lighthouse SEO score of 100 and full Google indexing compliance",
+          "Delivered accessibility (A11y) improvements across the platform, achieving a score of 94",
+          "Developed a code generation tool that accelerated team development velocity in accordance with high developer-set standards",
+          "Integrated third-party tools including GetSiteControl, YouTube, and others via CMS to enable dynamic content generation on landing pages",
+          "Authored technical and non-technical documentation; onboarded new engineers to squad processes and standards",
+          "Refined business requirements into actionable technical tasks; presented sprint delivery demos to company stakeholders",
+        ],
+      },
     ],
     technologies:
-      "NextJS 13-15, Redis, Rancher, Argo, Contentful, Jenkins, ExtJs, React, MUI, Redux, Docker, Jira, Confluence, Miro, .ect",
+      "NextJS 13-16, Redis, Rancher, Argo, Contentful, Jenkins, ExtJs, React, MUI, Redux, Docker, Jira, Confluence, Miro, ai-sdk, Drizzle, OpenAI, TurboRepo",
   },
   {
     startDate: "2022-01-07",
     endDate: "2023-01-05",
     title: "Senior Software Engineer/Tech Lead",
     company: "Ankorstore",
-    location: "Remote",
+    location: "Luxembourg/Remote",
     accomplishments: [
-      "Led and delivered more than 10 initiatives, 90% of them bring a significant value to the business",
-      "Translated business needs of those projects into technical requirements, split up the work to smaller chunks and transformed to tickets",
-      "All projects were delivered within deadline with 20% of it ahead of time",
-      "Redesigned a checkout with decreased loading time by 2 seconds",
-      "Played a key role in sorting out incidents and issues",
-      "Developed and released internal tool for engineer's growth",
-      "Provided a great onboarding experience for 5 new joiners",
-      "Introduce new technologies and tools to the team",
-      "Created RFC for optimization and developing new features",
+      {
+        title:
+          "B2B marketplace connecting independent brands with retailers across Europe",
+        items: [
+          "Translated business requirements into detailed technical specifications, decomposed into epics and tickets, managed end-to-end delivery - 90% of initiatives delivering significant business value, 20% shipped ahead of schedule",
+          "Redesigned the checkout flow, reducing page load time by 2 seconds and directly improving conversion",
+          "Designed and shipped an internal engineering growth framework tool adopted across the engineering organization",
+          "Authored RFCs for performance optimizations and new feature development",
+          "Played a key role in incident response, production issue triage and resolution",
+          "Onboarded new engineers and introduced new technologies and engineering best practices to the team",
+        ],
+      },
     ],
     technologies:
       "VueJs, Jest, Cypress, Laravel, GCP, Algolia, RabbitMQ, Grafana, Docker, Jira, Notion, Figma, NextJs, NextAuth, .etc",
@@ -47,13 +76,17 @@ const items = [
     company: "OAT",
     location: "Luxembourg/Remote",
     accomplishments: [
-      "Introducing 10 high demanded features which increases the interest in product",
-      "Developed the feature with difficult graphic requirements",
-      "Features support for most valuable client",
-      "Increased the code coverage with unit testing by 50%",
-      "Managed time constraints and high standardization requirements",
-      "Played a key role in roadmap planning and prioritization",
-      "Line manager for team of 6 people",
+      {
+        title:
+          "Open Assessment Technologies, leading open-source digital assessment platform",
+        items: [
+          "Line manager for a team of 6 engineers; accountable for roadmap planning, prioritization, and performance management",
+          "Introduced 10+ high-demand product features that directly increased user engagement and product adoption",
+          "Grew E2E test coverage by 50% and introduced TDD practices for resolving complex, hard-to-reproduce defects",
+          "Architected and delivered a dynamic PDF report generation engine for assessment workflows, producing fully customized, data-driven reports - the platform's most strategically critical feature",
+          "Managed delivery under strict time constraints and high standardization requirements",
+        ],
+      },
     ],
     technologies:
       "Svelte, Cypress, Jest, PHP, Symphony, Redis, GCP, Docker, K6, Git, Jira, Confluence",
@@ -65,8 +98,14 @@ const items = [
     company: "Sport50/Clubee",
     location: "Luxembourg",
     accomplishments: [
-      "Introduced a new website with personalized geolocation functions and SSR for better SEO",
-      "Upgrade existing payment platform system",
+      {
+        title:
+          "Digital management platform for sports clubs and federations across Europe",
+        items: [
+          "Launched a new website featuring personalized geolocation functionality, server-side rendering (SSR) for improved SEO, and multi-language support for European markets",
+          "Upgraded and modernized the existing payment platform integration",
+        ],
+      },
     ],
     technologies: "AWS, NodeJS, NextJS, ReactJS, Strapi",
   },
@@ -77,10 +116,14 @@ const items = [
     company: "Docler",
     location: "Luxembourg",
     accomplishments: [
-      "Introduced migration process from legacy code base to ES6",
-      "Integrated ReactJS to the system",
-      "Created and automatized generation documentation for internal framework",
-      "Integrated GA and GO",
+      {
+        title: "Global tech and entertainment group, live-streaming platform",
+        items: [
+          "Integrated React.js into the existing system, enabling component-based UI development at scale",
+          "Built and automated documentation generation for an internal framework, reducing onboarding time to understand the overall architecture",
+          "Integrated Google Analytics and Google Optimize, enabling data-driven UX decision making",
+        ],
+      },
     ],
     technologies:
       "Ext.js, JQuery, ReactJS, Redux, RiotJS, PHP, Google Optimize, Git, Jira, Confluence",
@@ -92,35 +135,42 @@ const items = [
     company: "Maxymiser - Oracle",
     location: "Ukraine, Poland",
     accomplishments: [
-      "Created internal API, which increased the speed and quality of development",
-      "Created build system for tests development",
-      "Got experience in fast problem solving and bug fixing",
-      "Got experience in making flexible and adjustable code",
+      {
+        title:
+          "Web optimization and A/B testing platform serving Fortune 500 companies across Gaming, Travel, E-commerce, and Media sectors",
+        items: [
+          "Developed an internal API that measurably improved development speed and output quality across the team",
+          "Implemented A/B testing variants and required event tracking across client platforms, enabling data-driven optimization for enterprise clients",
+          "Delivered robust, flexible, and maintainable JavaScript across multiple high-accountability client engagements in diverse industry verticals",
+        ],
+      },
     ],
     technologies:
       "JavaScript, HTML, CSS, JQuery, Mootools, AngularJS, KnockoutJS, BackboneJS, Git",
   },
 ];
 
-const List: React.FC<{ items: string[]; title: string }> = ({
-  items,
-  title,
-}) => (
-  <>
-    <h4 className="my-1 text-neutral-700">{title}</h4>
-    <ul className="text-neutral-500">
+type Project = {
+  items: string[];
+  title: string;
+};
+
+const List: React.FC<Project> = ({ items, title }) => (
+  <section className="my-2">
+    <p className="mb-4 text-neutral-700 italic">{title}</p>
+    <ul className="text-neutral-500 mb-4">
       {items.map((item, index) => (
         <li key={index} className="list-disc list-inside">
           {item}
         </li>
       ))}
     </ul>
-  </>
+  </section>
 );
 
 const History = () => {
   return (
-    <section className="my-4 print:my-2 flex flex-col break-inside-avoid-page">
+    <section className="pt-3 flex flex-col">
       <h2 className="mb-4 print:mb-2 border-b">Experience</h2>
       {items.map((item, index) => (
         <div
@@ -156,8 +206,14 @@ const History = () => {
               <br />
               {item.company} - {item.location}
             </h3>
+            {item.accomplishments.map((project: Project) => (
+              <List
+                key={project.title}
+                title={project.title}
+                items={project.items}
+              />
+            ))}
 
-            <List title="Major Accomplishments:" items={item.accomplishments} />
             <h4 className="my-1">Technologies/Tools:</h4>
             <p className="text-neutral-500 text-sm">{item.technologies}</p>
           </div>

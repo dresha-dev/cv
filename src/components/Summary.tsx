@@ -1,15 +1,21 @@
 import React from "react";
 
 const Summary = () => (
-  <section className="my-4 print:my-0 flex flex-col break-inside-avoid-page">
-    <h2 className="mb-4 border-b print:text-sm print:mb-1 ">Summary</h2>
+  <section className="my-4 print:my-0 flex flex-col ">
+    <h2 className="mb-4 border-b">Summary</h2>
     <p className="text-neutral-500">
-      Senior Software Engineer with 15+ years of experience specializing in
-      modern frontend development (React, Svelte, Vue) and full-stack delivery.
-      Proven track record leading cross-functional teams, driving migrations,
-      and building performant user experiences at scale. Currently based in
-      Luxembourg, open to remote opportunities. Passionate about mentoring and
-      continuous learning.
+      Senior Tech Lead and Principal Engineer with 15+ years of experience
+      solving complex technical challenges across diverse product domains. I
+      thrive at the intersection of technical depth and strategic thinking —
+      planning robust solutions, challenging assumptions, and setting the
+      standards that keep systems scalable and reliable long-term.
+      Business-oriented mindset with a strong focus on translating stakeholder
+      requirements into pragmatic, measurable technical solutions. Proven track
+      record leading cross-functional teams and owning technical roadmaps that
+      deliver real product outcomes. Early adopter of AI-augmented development
+      with GitHub Copilot and Claude AI, and a strong advocate for spreading
+      that culture across teams. Looking for a product company that creates real
+      value for people. Based in Luxembourg, open to remote.
     </p>
   </section>
 );

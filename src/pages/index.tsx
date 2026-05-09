@@ -9,6 +9,8 @@ import Education from "../components/Education";
 import { Helmet } from "react-helmet";
 import Summary from "../components/Summary";
 import Cat from "../components/Cat";
+import Certifications from "../components/Certifications";
+import SideProjects from "../components/SideProjects";
 
 const IndexPage = () => (
   <main className="max-w-screen-lg mx-auto min-w-min print:overflow-visible p-4 print:m-0 print:p-0">
@@ -24,20 +26,31 @@ const IndexPage = () => (
         content="CV, Senior Software Engineer, Andrii Ponamarov"
       ></meta>
     </Helmet>
-    <div className="md:w-1/3 md:float-left print:float-left print:w-1/4">
-      <Profile />
-    </div>
-    <Title className="pl-4 inline-block md:w-2/3 print:w-3/4 items-center md:items-start" />
+    <header>
+      <div className="md:w-1/3 md:float-left print:w-1/3 print:float-left">
+        <Profile />
+      </div>
 
-    <div className="md:float-left print:float-left md:w-1/3 print:w-1/3 clear-left px-4 mt-2">
-      <Skills />
-      <Languages />
-      <Education />
-      <Cat />
-    </div>
-    <div className="pl-4 inline-block md:w-2/3 print:w-2/3">
-      <Summary />
-      <History />
+      <div className="flex flex-col">
+        <Title />
+        <Summary />
+      </div>
+    </header>
+    <div className="">
+      <div
+        className="w-1/3 float-left clear-left px-4"
+        aria-label="Skills, Certifications, Languages, Education, and Side Projects"
+      >
+        <Skills />
+        <Certifications />
+        <Languages />
+        <Education />
+        <SideProjects />
+        <Cat />
+      </div>
+      <div className="w-2/3 float-left" aria-label="Work Experience">
+        <History />
+      </div>
     </div>
   </main>
 );

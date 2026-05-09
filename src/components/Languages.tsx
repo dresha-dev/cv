@@ -4,7 +4,7 @@ import SideList from "./SideList";
 const languages = [
   {
     name: "English",
-    description: "B2",
+    description: "Professional working proficiency",
   },
   {
     name: "Ukrainian",
@@ -12,11 +12,11 @@ const languages = [
   },
   {
     name: "Luxembourgish",
-    description: "A2",
+    description: "Elementary proficiency",
   },
   {
     name: "French",
-    description: "A2",
+    description: "Elementary proficiency",
   },
 ];
 
