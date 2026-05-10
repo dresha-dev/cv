@@ -4,13 +4,14 @@ import { format, formatDistance } from "date-fns";
 const items = [
   {
     startDate: "2023-01-05",
-    title: "Frontend Tech Lead / Software Engineer",
+    title: "Frontend Technical Lead / Software Engineer",
     company: "Staizen",
-    location: "Luxembourg/Remote",
+    companyDescription:
+      "Consulting company specializing in digital transformation",
+    location: "Luxembourg / Remote",
     accomplishments: [
       {
-        title:
-          "Fund Operating System - FinTech SaaS (institutional alternatives industry)",
+        title: "Fund Operating System - FinTech SaaS",
         items: [
           "Designed and owned the full technical roadmap for migrating a large-scale legacy ExtJS application to React, coordinating a cross-functional team of 8 engineers (frontend + backend)",
           "Established high coding standards and codebase structure across both legacy and new systems, and built the team's deep understanding of ExtJS internals - enabling engineers to confidently investigate, extend, and deliver complex client-requested features throughout the migration",
@@ -49,13 +50,13 @@ const items = [
   {
     startDate: "2022-01-07",
     endDate: "2023-01-05",
-    title: "Senior Software Engineer/Tech Lead",
+    title: "Senior Software Engineer / Technical Lead",
+    companyDescription:
+      "B2B marketplace connecting independent brands with retailers across Europe",
     company: "Ankorstore",
-    location: "Luxembourg/Remote",
+    location: "Luxembourg / Remote",
     accomplishments: [
       {
-        title:
-          "B2B marketplace connecting independent brands with retailers across Europe",
         items: [
           "Translated business requirements into detailed technical specifications, decomposed into epics and tickets, managed end-to-end delivery - 90% of initiatives delivering significant business value, 20% shipped ahead of schedule",
           "Redesigned the checkout flow, reducing page load time by 2 seconds and directly improving conversion",
@@ -72,13 +73,13 @@ const items = [
   {
     startDate: "2020-01-01",
     endDate: "2021-12-01",
-    title: "Senior Software Engineer/Line Manager/Team Lead",
+    title: "Senior Software Engineer / Line Manager / Team Lead",
+    companyDescription:
+      "Open Assessment Technologies, leading open-source digital assessment platform",
     company: "OAT",
-    location: "Luxembourg/Remote",
+    location: "Luxembourg / Remote",
     accomplishments: [
       {
-        title:
-          "Open Assessment Technologies, leading open-source digital assessment platform",
         items: [
           "Line manager for a team of 6 engineers; accountable for roadmap planning, prioritization, and performance management",
           "Introduced 10+ high-demand product features that directly increased user engagement and product adoption",
@@ -95,12 +96,12 @@ const items = [
     startDate: "2019-12-01",
     endDate: "2019-08-01",
     title: "Senior Software Developer",
-    company: "Sport50/Clubee",
+    company: "Sport50 / Clubee",
+    companyDescription:
+      "Digital management platform for sports clubs and federations across Europe",
     location: "Luxembourg",
     accomplishments: [
       {
-        title:
-          "Digital management platform for sports clubs and federations across Europe",
         items: [
           "Launched a new website featuring personalized geolocation functionality, server-side rendering (SSR) for improved SEO, and multi-language support for European markets",
           "Upgraded and modernized the existing payment platform integration",
@@ -113,11 +114,13 @@ const items = [
     startDate: "2016-07-15",
     endDate: "2019-07-15",
     title: "Frontend Developer",
+
     company: "Docler",
+    companyDescription:
+      "Global tech and entertainment group, live-streaming platform",
     location: "Luxembourg",
     accomplishments: [
       {
-        title: "Global tech and entertainment group, live-streaming platform",
         items: [
           "Integrated React.js into the existing system, enabling component-based UI development at scale",
           "Built and automated documentation generation for an internal framework, reducing onboarding time to understand the overall architecture",
@@ -133,11 +136,11 @@ const items = [
     endDate: "2016-07-01",
     title: "Frontend Developer",
     company: "Maxymiser - Oracle",
+    companyDescription:
+      "Web optimization and A/B testing platform serving Fortune 500 companies across Gaming, Travel, E-commerce, and Media sectors",
     location: "Ukraine, Poland",
     accomplishments: [
       {
-        title:
-          "Web optimization and A/B testing platform serving Fortune 500 companies across Gaming, Travel, E-commerce, and Media sectors",
         items: [
           "Developed an internal API that measurably improved development speed and output quality across the team",
           "Implemented A/B testing variants and required event tracking across client platforms, enabling data-driven optimization for enterprise clients",
@@ -152,12 +155,12 @@ const items = [
 
 type Project = {
   items: string[];
-  title: string;
+  title?: string;
 };
 
 const List: React.FC<Project> = ({ items, title }) => (
   <section className="my-2">
-    <p className="mb-4 text-neutral-700 italic">{title}</p>
+    {title && <p className="mb-4 text-neutral-700 italic">{title}</p>}
     <ul className="text-neutral-500 mb-4">
       {items.map((item, index) => (
         <li key={index} className="list-disc list-inside">
@@ -206,15 +209,12 @@ const History = () => {
               <br />
               {item.company} - {item.location}
             </h3>
-            {item.accomplishments.map((project: Project) => (
-              <List
-                key={project.title}
-                title={project.title}
-                items={project.items}
-              />
+            <h4>{item.companyDescription}</h4>
+            {item.accomplishments.map((project: Project, key: number) => (
+              <List key={key} title={project.title} items={project.items} />
             ))}
 
-            <h4 className="my-1">Technologies/Tools:</h4>
+            <h4 className="my-1">Technologies / Tools:</h4>
             <p className="text-neutral-500 text-sm">{item.technologies}</p>
           </div>
         </div>
