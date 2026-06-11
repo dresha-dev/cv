@@ -1,8 +1,8 @@
 import React from "react";
 import { withPrefix } from "gatsby";
-import avatar from "../images/avatar.png";
+import avatar from "../images/avatar-new.jpg";
 
-const email = "andrii.ponamarov@outlook.com";
+const email = "ponamarevandrej@gmail.com";
 const linkedin = "https://www.linkedin.com/in/andrii-ponamarov-7b413484/";
 
 const Profile = () => (
