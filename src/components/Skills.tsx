@@ -15,7 +15,7 @@ const skills = [
   {
     name: "Backend",
     description:
-      "Node.js · NestJS · GraphQL · PostgreSQL · Redis · MongoDB · Firestore · TypeORM · RabbitMQ · PHP · Laravel",
+      "Node.js · NestJS · GraphQL · PostgreSQL · Redis · MongoDB · Firestore · TypeORM · RabbitMQ · PHP · Laravel · REST API",
   },
   {
     name: "AI & Emerging",

@@ -1,6 +1,5 @@
 import React from "react";
-import { withPrefix } from "gatsby";
-import avatar from "../images/avatar-new.jpg";
+import avatar from "../images/avatar-new.jpeg";
 
 const email = "ponamarevandrej@gmail.com";
 const linkedin = "https://www.linkedin.com/in/andrii-ponamarov-7b413484/";
@@ -8,7 +7,7 @@ const linkedin = "https://www.linkedin.com/in/andrii-ponamarov-7b413484/";
 const Profile = () => (
   <section className="p-2 flex flex-col items-center">
     <img
-      src={withPrefix(avatar)}
+      src={avatar}
       className="border-2 border-cyan-50 w-[196px]"
       alt="Andrii Ponamarov"
     />
