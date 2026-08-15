@@ -34,7 +34,12 @@ const skills = [
   {
     name: "Practices",
     description:
-      "Agile · Scrum · RFC Authoring · Technical Roadmap · Cross-functional Leadership · Mentoring · Accessibility A11y · SEO",
+      "Agile · Scrum · RFC Authoring · Technical Roadmap · Cross-functional Leadership · Mentoring · Accessibility A11y · SEO · Performance Optimization · Code Review · Pair Programming ",
+  },
+  {
+    name: "Programming Languages",
+    description:
+      "Assembly · WebAssembly · C · C++ · Bash · PHP · Python · GO · Rust · Haxe · Java · Swift · Solidity · Ruby",
   },
 ];
 
