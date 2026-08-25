@@ -4,7 +4,7 @@ import { format, formatDistance } from "date-fns";
 const items = [
   {
     startDate: "2023-01-05",
-    title: "Frontend Technical Lead / Staff Engineer",
+    title: "Product Engineer / Technical Lead / Staff Engineer",
     company: "Staizen",
     companyDescription:
       "Consulting company specializing in digital transformation",

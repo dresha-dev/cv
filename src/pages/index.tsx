@@ -16,8 +16,11 @@ export const Head: HeadFC = () => (
   <>
     <html lang="en" />
     <meta charSet="utf-8" />
-    <title>Andrii Ponamarov - Senior Software Engineer</title>
-    <meta name="description" content="CV, Senior Software Engineer, Andrii Ponamarov" />
+    <title>Andrii Ponamarov - Product Engineer</title>
+    <meta
+      name="description"
+      content="CV, Product Engineer, Tech Lead, Andrii Ponamarov"
+    />
   </>
 );
 
