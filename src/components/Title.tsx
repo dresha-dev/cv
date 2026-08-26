@@ -8,7 +8,7 @@ const Title: React.FC<IProps> = ({ className = "" }) => (
   <section className={`flex flex-col relative ${className} float-left`}>
     <PrintButton />
     <h1>Andrii Ponamarov</h1>
-    <h2>Full Stack Technical Lead · Staff Engineer</h2>
+    <h2>Product Engineer · Technical Lead</h2>
   </section>
 );
 
