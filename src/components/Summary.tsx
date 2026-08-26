@@ -4,7 +4,7 @@ const Summary = () => (
   <section className="my-4 print:my-0 flex flex-col ">
     <h2 className="mb-4 border-b">Summary</h2>
     <p className="text-neutral-500">
-      Technical Lead and Staff Engineer with 14 years of experience solving
+      Technical Lead and Product Engineer with 14 years of experience solving
       complex technical challenges across diverse product domains. I thrive at
       the intersection of technical depth and strategic thinking - planning
       robust solutions, challenging assumptions, setting the standards that keep
