@@ -151,6 +151,26 @@ const items = [
     technologies:
       "JavaScript, HTML, CSS, JQuery, Mootools, AngularJS, KnockoutJS, BackboneJS, Git",
   },
+  {
+    startDate: "2008-08-01",
+    endDate: "2012-01-01",
+    title: "Founder & Repair Engineer",
+    company: "Mobile Phone Repair Service",
+    location: "Dnipro, Ukraine",
+    companyDescription:
+      "Independent mobile phone repair service for private customers. I ran it end to end, from diagnosis and repair to customer service, buying parts and finances.",
+    accomplishments: [
+      {
+        items: [
+          "Founded the business straight after my Radio Physics & Electronics degree and built it up from nothing.",
+          "Diagnosed and repaired faults down to component level: SMD soldering, BGA microchip rework and replacement, and repairing traces on damaged boards.",
+          "Repaired water-damaged phones: cleaned off corrosion, recovered boards and saved customers' data where I could.",
+        ],
+      },
+    ],
+    technologies:
+      "SMD/BGA soldering & rework stations, multimeter & oscilloscope diagnostics, firmware flashing tools, schematic & board-level troubleshooting",
+  },
 ];
 
 type Project = {
